@@ -104,15 +104,13 @@ class EagleRun extends Eagle {
         super(name, age);
     }
 
-    runEagle(speed: number): string {
-        return this.run(speed);
-    }
+     
 }
 
 // Contoh penggunaan:
 const eagleRun = new EagleRun("Eagle", 5);
 console.log(eagleRun.fly()); //Eagle yang berumur 5 sedang terbang!
-console.log(eagleRun.runEagle(100)); //Eagle berlari dengan kecepatan 100 km/jam
+// console.log(eagleRun.run(100));  //Eagle berlari dengan kecepatan 100 km/jam
 
 // no 8
 
@@ -158,6 +156,6 @@ class speedTes extends Eagle {
     }
 }
 
-// Membuat instance dari kelas EagleRun
-const speedtes = new EagleRun("Kuku", 5); // age diisi dengan nilai default 5 untuk contoh ini
-console.log ()
+const speedtes = new EagleRun("Kuku", 220); // age diisi dengan nilai default 5 untuk contoh ini
+
+// console.log(speedtes.runEagle()); //Kuku berlari dengan kecepatan 220 km/jam
